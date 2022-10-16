@@ -1,4 +1,16 @@
-// Reset
+// Загальні стилі
+:root {
+  /* Fonts */
+  --main-font: "Montserrat", sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #fcfcfc;
+  --dark-txt-cl: #131313;
+
+  /* BG colors */
+  --main-bg-cl: #84a178;
+}
+
 h2,
 h3,
 p {
@@ -12,6 +24,11 @@ img {
   height: auto;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .list {
   list-style: none;
 
@@ -21,45 +38,46 @@ img {
 
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  overflow: hidden;
   border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 480px;
 
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (max-width: 767.5px) {
-    max-width: 480px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-left: 116px;
-    padding-right: 116px;
+    max-width: 1200px;
+
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
-.section {
+/*Стилі розділу відгуків*/
+.reviews-box {
   color: currentColor;
-  font-family: Montserrat, sans-serif;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--main-font);
+
   padding-top: 80px;
   padding-bottom: 48px;
 
@@ -71,10 +89,11 @@ img {
   @media screen and (min-width: 1200px) {
     padding-top: 128px;
     padding-bottom: 100px;
+    padding-left: 101px;
+    padding-right: 101px;
   }
 }
 
-/*Стилі*/
 .block-items {
   cursor: default;
 }
@@ -90,7 +109,7 @@ img {
 
   text-align: center;
 
-  color: #131313;
+  color: var(--dark-txt-cl);
 
   margin-bottom: 14px;
 
@@ -108,8 +127,8 @@ img {
 
   text-align: center;
 
-  color: #fcfcfc;
-  background: #84a178;
+  color: var(--main-txt-cl);
+  background-color: var(--main-bg-cl);
 
   border-radius: 10px;
 

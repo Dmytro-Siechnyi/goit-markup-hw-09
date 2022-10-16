@@ -7,7 +7,10 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 2500,
     autoplayHoverPause: true,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
+    smartSpeed: 1750,
+    dragEndSpeed: 500,
+    dotsSpeed: 750,
+    // animateIn: "false",
+    // animateOut: "fadeOut",
   });
 });

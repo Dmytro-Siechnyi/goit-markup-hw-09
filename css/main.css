@@ -1,4 +1,14 @@
 @charset "UTF-8";
+:root {
+  /* Fonts */
+  --main-font: "Montserrat", sans-serif;
+  /* Text colors */
+  --main-txt-cl: #fcfcfc;
+  --dark-txt-cl: #131313;
+  /* BG colors */
+  --main-bg-cl: #84a178;
+}
+
 h2,
 h3,
 p {
@@ -12,6 +22,11 @@ img {
   height: auto;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -20,65 +35,62 @@ img {
 
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  overflow: hidden;
   border: 0;
   padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 480px;
   padding-left: 20px;
   padding-right: 20px;
-}
-@media screen and (max-width: 767.5px) {
-  .container {
-    max-width: 480px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
-    padding-left: 116px;
-    padding-right: 116px;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
-.section {
+/*Стилі розділу відгуків*/
+.reviews-box {
   color: currentColor;
-  font-family: Montserrat, sans-serif;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--main-font);
   padding-top: 80px;
   padding-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
-  .section {
+  .reviews-box {
     padding-top: 60px;
     padding-bottom: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section {
+  .reviews-box {
     padding-top: 128px;
     padding-bottom: 100px;
+    padding-left: 101px;
+    padding-right: 101px;
   }
 }
 
-/*Стилі*/
 .block-items {
   cursor: default;
 }
@@ -92,7 +104,7 @@ img {
   font-size: 20px;
   line-height: 1.86;
   text-align: center;
-  color: #131313;
+  color: var(--dark-txt-cl);
   margin-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
@@ -108,8 +120,8 @@ img {
   line-height: 2.55;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fcfcfc;
-  background: #84a178;
+  color: var(--main-txt-cl);
+  background-color: var(--main-bg-cl);
   border-radius: 10px;
   padding: 34px 39px;
   margin-top: 32px;
