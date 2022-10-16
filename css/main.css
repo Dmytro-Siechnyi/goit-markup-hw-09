@@ -95,11 +95,10 @@ ul {
   cursor: default;
 }
 
-.inner-item {
+.reviews-item {
   text-align: center;
 }
-
-.name-title {
+.reviews-item .name-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
@@ -108,13 +107,12 @@ ul {
   margin-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
-  .name-title {
+  .reviews-item .name-title {
     font-size: 16px;
     margin-bottom: 32px;
   }
 }
-
-.reviews-text {
+.reviews-item .reviews-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 2.55;
@@ -128,7 +126,7 @@ ul {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  .reviews-text {
+  .reviews-item .reviews-text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
@@ -139,7 +137,7 @@ ul {
   }
 }
 @media screen and (min-width: 1200px) {
-  .reviews-text {
+  .reviews-item .reviews-text {
     font-size: 16px;
     padding: 39px 74px;
     margin-top: 32px;
