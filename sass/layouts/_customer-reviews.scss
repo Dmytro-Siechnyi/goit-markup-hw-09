@@ -101,6 +101,12 @@ ul {
 .reviews-item {
   text-align: center;
 
+  .reviews-item__foto {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .name-title {
     font-weight: 500;
     font-size: 20px;

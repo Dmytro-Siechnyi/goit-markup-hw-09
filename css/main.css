@@ -27,7 +27,7 @@ ul {
   list-style: none;
 }
 
-.list {
+.reviews-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -97,6 +97,11 @@ ul {
 
 .reviews-item {
   text-align: center;
+}
+.reviews-item .reviews-item__foto {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .reviews-item .name-title {
   font-weight: 500;
